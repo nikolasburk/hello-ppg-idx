@@ -33,7 +33,7 @@
       # Runs when a workspace is first created
       onCreate = {
         npm-install = "npm i --no-audit --prefer-offline";
-        init-db = "npx prisma init --db";
+        init-db = "npx prisma@6.3.0-dev.9 init --db";
       };
       # Runs when the workspace is (re)started
       onStart = {
