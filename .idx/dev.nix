@@ -34,6 +34,7 @@
       onCreate = {
         npm-install = "npm i --no-audit --prefer-offline";
         init-db = "npx prisma@6.3.0-dev.9 init --db";
+        default.openFiles = [ "README.md" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
