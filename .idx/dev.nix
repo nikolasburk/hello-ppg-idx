@@ -33,11 +33,12 @@
       # Runs when a workspace is first created
       onCreate = {
         npm-install = "npm i --no-audit --prefer-offline";
-        init-db = "npx prisma@6.3.0-dev.9 init --db";
+        # init-db = "npx prisma@6.3.0-dev.9 init --db"; # auto-creation of DBs will be enabled soon
         default.openFiles = [ "README.md" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
+        init-instructions = "echo \"Follow instructions in README\"";
         # Example: start a background task to watch and re-build backend code
         # watch-backend = "npm run watch-backend";
       };
