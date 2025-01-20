@@ -34,12 +34,11 @@
       onCreate = {
         npm-install = "npm i --no-audit --prefer-offline";
         # init-db = "npx prisma@6.3.0-dev.9 init --db"; # auto-creation of DBs will be enabled soon
-        init-instructions-create = "echo \"Follow instructions in README\"";
         default.openFiles = [ "README.md" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
-        init-instructions-start = "echo \"Follow instructions in README\"";
+        init-instructions-start = "echo \"Follow the instructions in the README to set up your Prisma Postgres for this project.\"";
         # Example: start a background task to watch and re-build backend code
         # watch-backend = "npm run watch-backend";
       };
